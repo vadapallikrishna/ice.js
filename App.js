@@ -1,0 +1,3 @@
+customElements.define(new Ice(()=>{
+
+}));

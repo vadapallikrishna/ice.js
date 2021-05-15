@@ -1,18 +1,7 @@
-class Ice extends Element{
+class Ice extends HTMLElement{
     constructor(fn) {
+        super();
         this.attachShadow({mode: 'open'});
         this.shadowRoot.append(fn());
     }
-
-    style() {
-        return this;
-    }
- 
-    on() {
-        return this;
-    }
 }
-
-new Ice(
-    document.createElement()
-).style({"font-size": 30})
